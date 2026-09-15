@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Health Tips | Weather Lifestyle Advisor</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(images/tips.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* Navbar hover */
+    .nav-link-custom:hover {
+      color: #ff4500 !important;
+    }
+
+    /* Health tip box hover animation */
+    .tip-box {
+      background-color: #d3c6bf8c;
+      border-left: 6px solid #1E90FF;
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      font-size: 1.05rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .tip-box:hover {
+      background-color: #ffffff;
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 10;
+    }
+
+    .tip-box strong {
+      color: #004080;
+    }
+  </style>
+</head>
+<body class="p-3">
+
+<!-- Header -->
+<header class="container rounded-3 mb-4 p-3 d-flex flex-nowrap align-items-center"
+        style="max-width:900px; background-color:#5382b1;">
+  <h1 class="mb-0 text-white fw-bold me-auto">Health Tips</h1>
+  <nav class="d-flex gap-4 flex-nowrap">
+    <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="index.html">Home</a>
+    <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="clothing.html">Clothing Suggestion</a>
+    <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="healthtips.html">Health Tips</a>
+    <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="hazards.html">Health Hazards</a>
+    <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="AQI.html">AQI</a>
+    <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<hr class="mx-auto" style="max-width:900px; border-color:#be4b4b;">
+
+<!-- Health Tips Content -->
+<section class="container mb-5 p-4 rounded shadow" style="max-width:900px; background-color: rgba(255,255,255,0.05);">
+  <h2 class="text-center mb-4">Daily Health Tips for All Seasons</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4">
+      <div class="tip-box"> <strong>Stay Hydrated:</strong> Drink plenty of water throughout the day, especially during hot weather. </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="tip-box"> <strong>Balanced Diet:</strong> Include fresh fruits, vegetables, and whole grains in your meals. </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="tip-box"> <strong>Sun Protection:</strong> Use sunscreen and wear hats when outdoors to protect your skin. </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="tip-box"> <strong>Regular Exercise:</strong> Engage in moderate physical activity daily for overall wellness. </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="tip-box"> <strong>Avoid Pollution Exposure:</strong> On poor air quality days, limit outdoor activities. </div>
+    </div>
+  </div>
+</section>
+
+<hr class="mx-auto" style="max-width:900px; border-color:#be4b4b;">
+
+<!-- Footer -->
+<footer class="container rounded-3 p-3 text-center mb-5"
+        style="max-width:900px; background-color:#92b5dd; color:#eee; font-style:italic;">
+  <p class="mb-0">© 2025 Weather Lifestyle Advisor<br>Stay Healthy, Stay Safe!</p>
+</footer>
+
+</body>
+</html>

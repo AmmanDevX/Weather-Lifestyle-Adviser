@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Health Hazards | Weather Lifestyle Advisor</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(images/hazard.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .nav-link-custom:hover {
+      color: #ff4500 !important;
+    }
+
+    .hazard-box, .guidance-box {
+      background-color: #ffe6e6;
+      border-left: 6px solid #00aeff;
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      font-size: 1.05rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      color: black;
+      height: 100%; /* Equal height */
+    }
+
+    .hazard-box:hover, .guidance-box:hover {
+      background-color: #ffcccc;
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(255,69,0,0.3);
+      position: relative;
+      z-index: 10;
+    }
+
+    .hazard-box strong {
+      color: #b22222;
+    }
+  </style>
+</head>
+<body class="p-3">
+
+<!-- Header -->
+<header class="container rounded-3 mb-4 p-3 d-flex flex-nowrap align-items-center"
+        style="max-width:900px; background-color:#5382b1;">
+  <h2 class="mb-0 text-white fw-bold me-auto">Health Hazards</h2>
+  <nav class="d-flex gap-2 flex-nowrap ms-auto">
+    <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="index.html">Home</a>
+    <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="clothing.html">Clothing Suggestion</a>
+    <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="healthtips.html">Health Tips</a>
+    <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="hazards.html">Health Hazards</a>
+    <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="AQI.html">AQI</a>
+    <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<hr class="mx-auto" style="max-width:900px; border-color:#ddd;">
+
+<!-- Common Health Hazards Section -->
+<section class="container mb-5 p-4 rounded shadow text-black" style="max-width:900px; background-color: rgba(255,255,255,0.2);">
+  <h2 class="text-center mb-4">Common Weather-Related Health Hazards</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div class="col d-flex">
+      <div class="hazard-box flex-fill">
+        <strong>Heat Stroke:</strong> Occurs from prolonged exposure to high temperatures. Symptoms include dizziness, nausea, and confusion. Immediate cooling and hydration are essential.
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="hazard-box flex-fill">
+        <strong>Hypothermia:</strong> A dangerous drop in body temperature due to cold exposure. Shivering, slow speech, and fatigue are warning signs.
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="hazard-box flex-fill">
+        <strong>Allergic Reactions:</strong> Triggered by pollen and pollutants; symptoms include sneezing, itchy eyes, and skin rashes.
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="hazard-box flex-fill">
+        <strong>Respiratory Problems:</strong> Caused by poor air quality and pollutants, leading to asthma attacks and bronchitis.
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="hazard-box flex-fill">
+        <strong>Dehydration:</strong> Lack of sufficient fluids, common in hot and dry weather, causing headaches and weakness.
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="hazard-box flex-fill">
+        <strong>Sunburn:</strong> Skin damage from excessive UV exposure. Use sunscreen and wear protective clothing outdoors.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Guidance Section inside same container style -->
+<section class="container mb-5 p-4 rounded shadow text-black d-flex" style="max-width:900px; background-color: rgba(255,255,255,0.2);">
+  <div class="guidance-box flex-fill">
+    <h2 class="text-center mb-4">Guidance</h2>
+    <p>
+      Always be aware of weather conditions and air quality before planning outdoor activities. Take necessary precautions to protect yourself from extreme heat, cold, or pollution.
+    </p>
+    <p>
+      Maintain hydration, wear appropriate clothing, and use sun protection when needed. If symptoms of heat stroke or hypothermia appear, seek immediate medical attention.
+    </p>
+  </div>
+</section>
+
+<hr class="mx-auto" style="max-width:900px; border-color:#ddd;">
+
+<!-- Footer -->
+<footer class="container rounded-3 p-3 text-center mb-5"
+        style="max-width:900px; background-color:#6a8aaf; color:#000; font-style:italic;">
+  <p class="mb-0">© 2025 Weather Lifestyle Advisor<br>Protect Yourself, Stay Informed!</p>
+</footer>
+
+</body>
+</html>

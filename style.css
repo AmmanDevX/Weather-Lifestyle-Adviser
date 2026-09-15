@@ -1,0 +1,283 @@
+/* Base reset and typography */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f8ff;
+  background-image: url(images/home1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4179b1;
+  border-radius: 10px;
+  color: white;
+  flex-wrap: nowrap; /* Keep header items in one line */
+  gap: 20px;
+  overflow: hidden;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.53rem;   /* Smaller title size */
+  margin: 0;
+  flex-shrink: 0;
+  white-space: nowrap;
+  max-width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Hide scrollbar but allow scrolling */
+nav::-webkit-scrollbar {
+  display: none;
+}
+nav {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .93rem;
+  position: relative;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff4500;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4500;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* City input section */
+.city-input-section {
+  max-width: 500px;
+  margin: 0 auto 50px auto;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.city-input-section input[type="text"] {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 2px solid #003366;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  min-width: 180px;
+}
+
+.city-input-section input[type="text"]:focus {
+  border-color: #ff4500;
+  box-shadow: 0 0 8px rgba(255, 69, 0, 0.5);
+}
+
+.city-input-section button {
+  padding: 10px 20px;
+  background-color: #3f74a8;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.city-input-section button:hover {
+  background-color: #ff4500;
+}
+
+/* Centered content sections */
+section {
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  /* background: rgb(141, 91, 91); */
+  padding: 30px 40px;
+  border-radius: 12px;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+}
+
+/* Section headings */
+section h2, section h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+/* Feature boxes container */
+.features-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+/* Individual feature box */
+.features-boxes .box {
+  background-color: #d3c6bf8c;
+  border-left: 8px solid #1295e0e8;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 110px;
+  user-select: none;
+  text-decoration: none; /* REMOVE UNDERLINE */
+}
+
+.features-boxes .box:hover {
+  background-color: #c7defa;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  transform: scale(1.05);
+  z-index: 10;
+  position: relative;
+  text-decoration: none; /* ENSURE NO UNDERLINE ON HOVER */
+}
+
+/* Guidance section styling */
+.guidance-section p {
+  max-width: 700px;
+  margin: 12px auto;
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+/* Horizontal rules */
+hr {
+  max-width: 900px;
+  margin: 40px auto;
+  border: 0;
+  height: 1px;
+  background: #ddd;
+}
+
+/* Footer */
+footer {
+  max-width: 900px;
+  margin: 50px auto 0 auto;
+  padding: 20px 30px;
+  background-color: #4d92d8;
+  color: #eee;
+  border-radius: 10px;
+  font-style: italic;
+  text-align: center;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .features-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .city-input-section {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .city-input-section input[type="text"],
+  .city-input-section button {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+/* Logo container */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Logo icon */
+.logo-icon {
+  font-size: 1.4rem;
+  background: white;
+  color: #003366;
+  width: 42px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+
+
+/* Hover effect */
+.logo:hover .logo-icon {
+  transform: rotate(-10deg) scale(1.05);
+}
+
+.logo:hover .logo-text {
+  color: #ff4500;
+}
+
+  .logo-icon {
+    width: 25px;
+    height: 30px;
+    font-size: 1.0rem;
+  }
+

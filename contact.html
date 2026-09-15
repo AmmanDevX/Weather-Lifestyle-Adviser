@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Weather Lifestyle Advisor</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: white;
+      color: #333;
+    }
+
+    /* Header links */
+    .nav-link-custom {
+      color: white;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s;
+    }
+    .nav-link-custom::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #ff4500;
+      transition: width 0.3s;
+    }
+    .nav-link-custom:hover {
+      color: #ff4500 !important;
+    }
+    .nav-link-custom:hover::after {
+      width: 100%;
+    }
+
+    /* Contact card */
+    .contact-card {
+      border-radius: 1rem;
+      padding: 2rem;
+      background: #f0f0f0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s;
+    }
+    .contact-card:hover {
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    /* Form inputs */
+    .form-control:focus {
+      border-color: #ff4500;
+      box-shadow: 0 0 10px rgba(255,69,0,0.5);
+      outline: none;
+    }
+
+    /* Submit button */
+    .btn-custom {
+      background-color: #2b7cce;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #ff4500;
+      box-shadow: 0 6px 18px rgba(255,69,0,0.5);
+    }
+
+    footer {
+      max-width: 900px;
+      margin: 50px auto 0 auto;
+      padding: 20px;
+      background-color: #5aa1e7;
+      color: #eee;
+      border-radius: 1rem;
+      font-style: italic;
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="p-3">
+
+<!-- Header -->
+<header class="container rounded-3 mb-4 p-3 d-flex flex-wrap align-items-center justify-content-between"
+        style="max-width:900px; background-color:#5382b1;">
+  <h3 class="text-white fw-bold mb-0">Weather Lifestyle Advisor</h3>
+  <nav class="d-flex gap-2 flex-wrap ms-auto">
+    <a class="nav-link-custom text-white text-decoration-none" href="index.html">Home</a>
+    <a class="nav-link-custom text-white text-decoration-none" href="clothing.html">Clothing Suggestion</a>
+    <a class="nav-link-custom text-white text-decoration-none" href="healthtips.html">Health Tips</a>
+    <a class="nav-link-custom text-white text-decoration-none" href="hazards.html">Health Hazards</a>
+    <a class="nav-link-custom text-white text-decoration-none" href="aqi.html">AQI</a>
+    <a class="nav-link-custom text-white text-decoration-none" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- Contact Form -->
+<main class="container contact-card mb-5" style="max-width:700px;">
+  <h2 class="text-center mb-4 fw-bold" style="color:#1E90FF;">Contact Us</h2>
+  <form action="#" method="post">
+    <div class="mb-3">
+      <label for="name" class="form-label fw-semibold">Full Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label fw-semibold">Email Address</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="your.email@example.com" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label fw-semibold">Message</label>
+      <textarea class="form-control" id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+    </div>
+    <button type="submit" class="btn btn-custom w-100">Submit</button>
+  </form>
+</main>
+
+<!-- Footer -->
+<footer class="container rounded-3 mb-5" style="max-width:900px;">
+  <p class="mb-0">© 2025 Weather Lifestyle Advisor | Stay Healthy, Stay Safe!</p>
+</footer>
+
+</body>
+</html>

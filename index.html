@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather Lifestyle Advisor | Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Navbar hover */
+    .nav-link-custom:hover {
+      color: #ff4500 !important;
+    }
+
+    /* Feature box animation */
+    .feature-box {
+      background-color: #d3c6bf8c;
+      border-left: 8px solid #1295e0e8;
+      transition: all 0.35s ease;
+    }
+
+    .feature-box:hover {
+      background-color: #c7defa;
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    }
+  </style>
+</head>
+
+<body
+  class="p-3"
+  style="
+    background-image: url(images/home1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  "
+>
+
+<!-- Header -->
+<header class="container rounded-3 mb-5 p-3"
+        style="max-width:900px; background-color:#4179b1;">
+  <div class="d-flex align-items-center flex-nowrap">
+
+    <!-- Logo + Title -->
+    <div class="d-flex align-items-center gap-2 flex-shrink-0">
+      <span class="bg-white text-dark rounded-circle d-flex align-items-center justify-content-center"
+            style="width:28px;height:28px;font-size:0.9rem;">
+        ☁️
+      </span>
+
+      <h1 class="mb-0 text-white fw-bold"
+          style="font-size:1.55rem; white-space:nowrap;">
+        Weather Lifestyle Advisor
+      </h1>
+    </div>
+
+    <!-- Navbar (push to right with margin start auto) -->
+    <nav class="d-flex gap-2 flex-nowrap ms-auto">
+      <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="index.html">         Home</a>
+      <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="clothing.html">Clothing Suggestion</a>
+      <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="Healthtips.html">Health Tips</a>
+      <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="hazards.html">Health Hazards</a>
+      <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="AQI.html">AQI</a>
+      <a class="nav-link-custom text-white fw-semibold text-decoration-none" href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- City Input -->
+<div class="container mb-5" style="max-width:900px;">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="input-group">
+        <input type="text" class="form-control"
+               placeholder="Enter city name, e.g. Islamabad">
+        <button class="btn text-white" style="background-color:#3f74a8;">
+          Check Weather
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Features -->
+<section class="container text-center mb-5" style="max-width:900px;">
+  <h3 class="mb-4 text-white">Main Features</h3>
+
+  <div class="row g-4 justify-content-center">
+    <div class="col-md-4">
+      <a href="clothing.html"
+         class="feature-box d-flex align-items-center justify-content-center p-4 rounded text-white text-decoration-none h-100">
+        Clothing Recommendation according to weather
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="Healthtips.html"
+         class="feature-box d-flex align-items-center justify-content-center p-4 rounded text-white text-decoration-none h-100">
+        Daily health and safety guidance
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="hazards.html"
+         class="feature-box d-flex align-items-center justify-content-center p-4 rounded text-white text-decoration-none h-100">
+        Identification of weather-related health hazards
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="AQI.html"
+         class="feature-box d-flex align-items-center justify-content-center p-4 rounded text-white text-decoration-none h-100">
+        Air Quality Index (AQI) awareness
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="contact.html"
+         class="feature-box d-flex align-items-center justify-content-center p-4 rounded text-white text-decoration-none h-100">
+        Contact---------To--------- Us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Guidance Section -->
+<section class="container text-center mb-5" style="max-width:900px;">
+  <h3 class="mb-4 text-white">Guidance</h3>
+
+  <p class="text-white">
+    Based on the current weather and air quality, our system recommends appropriate clothing,
+    hydration, and precautions to keep you safe and comfortable.
+  </p>
+
+  <p class="text-white">
+    Always stay updated with the latest weather information, and adjust your plans accordingly
+    to avoid weather-related health risks.
+  </p>
+
+  <p class="text-white">
+    If the Air Quality Index is poor, limit outdoor activities and use protective masks if necessary.
+  </p>
+</section>
+
+<!-- Footer -->
+<footer class="container rounded-3 p-3 text-center"
+        style="max-width:900px; background-color:#4d92d8;">
+  <p class="mb-0 fst-italic text-white">
+    © 2025 Weather Lifestyle Advisor | Stay Healthy, Stay Safe!
+  </p>
+</footer>
+
+</body>
+</html>
